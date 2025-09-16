@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar form</title>
+
+
+</head>
+<body>
+        <form>
+  <div>
+    <label for="nama-depan">Nama Depan</label> <br>
+    <input id="nama-depan" name="nama_depan" placeholder="Nama Depan">
+  </div>
+
+  <div style="margin-top: 1rem">
+    <label for="nama-belakang">Nama Belakang</label> <br>
+    <input id="nama-belakang" name="nama_belakang" placeholder="Nama Belakang">
+  </div>
+
+  <div style="margin-top: 1rem">
+    <label for="email">Email</label> <br>
+    <input id="email" name="email" placeholder="Email">
+  </div>
+
+  <div style="margin-top: 1rem">
+    <label for="password">Password</label> <br>
+    <input id="password" name="password" placeholder="Password">
+  </div>
+
+  <div style="margin-top: 1rem">
+    <label for="alamat">Alamat</label> <br>
+    <input id="alamat" name="alamat" placeholder="Alamat">
+  </div>
+    <div style="margin-top: 1rem">
+        <label for="kota">Kota</label> <br>
+        <input id="kota" name="kota" placeholder="Kota">
+    </div>
+  </form>
+
+  <form>
+  Jenis kelamin: <br>
+  
+  <div>
+    <input id="lk" type="radio" name="jenis_kelamin">
+    <label for="lk">Laki-Laki</label>
+  </div>
+
+  <div>
+    <input id="pr" type="radio" name="jenis_kelamin">
+    <label for="pr">Perempuan</label>
+  </div>
+
+  Bahasa Asing Favorit: <br>
+  
+  <div>
+    <input id="inggris" type="radio" name="bahasa_asing">
+    <label for="inggris">Inggris</label>
+  </div>
+
+  <div>
+    <input id="arab" type="radio" name="bahasa_asing">
+    <label for="arab">Arab</label>
+  </div>
+
+  <div>
+    <input id="jerman" type="radio" name="bahasa_asing">
+    <label for="jerman">Jerman</label>
+  </div>
+
+  <div>
+    <input id="jepang" type="radio" name="bahasa_asing">
+    <label for="jepang">Jepang</label>
+</form>
+
+  <form>
+  <input type="text" name="nama" value="Roffi"> <br>
+  <input type="submit" value="Simpan">
+</form>
+
+<form>
+  <label for="nama">Nama</label> <br>
+  <input id="nama" name="nama" value="Suparman"> <br>
+
+  <label for="alamat">Alamat</label> <br>
+  <textarea id="alamat" name="alamat">Surabaya</textarea> <br>
+</form>
+
+<form>
+  <label for="nama">Nama</label> <br>
+  <input id="nama" name="nama" value="Suparman"> <br>
+
+  <label for="alamat">Alamat 1</label> <br>
+  <textarea
+    id="alamat-1"
+    name="alamat_1"
+    rows="5"
+    cols="20"
+  >Surabaya</textarea> <br>
+
+  <label for="alamat-2">Alamat 2</label> <br>
+  <textarea
+    id="alamat-2"
+    name="alamat_2"
+    rows="3"
+    cols="30"
+  >Malang</textarea> <br>
+</form>
+
+<form>
+  <fieldset>
+    <legend>Data Diri</legend>
+    <label for="nama">Nama</label><br>
+    <input id="nama" name="nama"><br>
+    <label for="asal">Asal</label><br>
+    <input id="asal" name="asal"><br>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Blog & Sosmed</legend>
+    <label for="instagram">Instagram</label><br>
+    <input id="instagram" name="instagram" type="url"><br>
+    <label for="facebook">Facebook</label><br>
+    <input id="facebook" name="facebook" type="url"><br>
+    <label for="twitter">Twitter</label><br>
+    <input id="twitter" name="twitter" type="url"><br>
+    <label for="Youtube">Youtube</label><br>
+    <input id="Youtube" name="Youtube" type="url"><br>
+  </fieldset>
+  <button onclick="alert('Tombol ini diklik!')">
+  Klik Saya!
+</button>
+  <button type="submit">Kirim</button>
+  <button type="reset">Reset</button>
+  <button type="button" onclick="alert('Tombol ini diklik!')">Klik Saya!</button>
+  <button type="submit" formaction="https://www.google.com">Kirim ke Google</button>
+  <button type="submit" formaction="https://www.bing.com">Kirim ke Bing</button>
+  <button type="submit" formaction="https://www.yahoo.com">Kirim ke Yahoo</button>
+  <button type="submit" formaction="https://www.duckduckgo.com">Kirim ke DuckDuckGo</button>
+  <button type="submit" formaction="https://www.blogger.com">Kirim ke Blogger</button>
+  <button type="submit" formaction="https://  www.wordpress.com">Kirim ke WordPress</button>
+  <button type="submit" formaction="https://www.medium.com">Kirim ke Medium</button>
+  <button type="submit" formaction="https://www.quora.com">Kirim ke Quora</button>
+  <button type="submit" formaction="https://www.reddit.com">Kirim ke Reddit</button>
+  <button type="submit" formaction="https://www.stackoverflow.com">Kirim ke Stack Overflow</button>
+  
+</form>
+
+<h2>Form dengan autocomplete</h2>
+
+<!--
+  fitur autocomplete akan hidup secara default
+  tanpa harus mendefinisikan atribut autocomplete
+-->
+<form autocomplete="on">
+  <label>Nama</label>
+  <input name="name"> <br>
+  <label>Email</label>
+  <input name="email" type="email"> <br>
+  <label>Nomor Telpon</label>
+  <input name="phone">
+</form>
+<form>
+  <label for="isian-email">Masukkan email:</label> <br>
+  <input id="isian-email" type="email" value="asdf"> <br> <br>
+
+  <button>Submit</button>
+</form>
+<form>
+<label for="isian-password">Masukkan password</label> <br>
+<input id="isian-password" type="password" name="password">
+  <button>Submit</button>
+</form>
+
+</body>
+</html>

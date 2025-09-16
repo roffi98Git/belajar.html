@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Tabel</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead th {
+            background-color: #003366;
+            color: white;
+        }
+
+        .nilai-header {
+            vertical-align: top;
+            height: 80px; /* tinggi sel supaya vertical-align terlihat */
+        }
+
+        .isi {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Nama</th>
+                <th colspan="3">Nilai</th>
+                <th rowspan="2">Keterangan</th>
+            </tr>
+            <tr>
+                <th class="nilai-header">UTS</th>
+                <th class="nilai-header">UAS</th>
+                <th class="nilai-header">Rata-Rata</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="isi">
+                <td>1</td>
+                <td>Udin</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>LULUS</td>
+            </tr>
+            <tr class="isi">
+                <td>2</td>
+                <td>Ujang</td>
+                <td>80</td>
+                <td>80</td>
+                <td>80</td>
+                <td>LULUS</td>
+            </tr>
+            <tr class="isi">
+                <td>3</td>
+                <td>Isin</td>
+                <td>87</td>
+                <td>78</td>
+                <td>82,5</td>
+                <td>LULUS</td>
+            </tr>
+            <tr class="isi">
+                <td>4</td>
+                <td>Surisin</td>
+                <td>50</td>
+                <td>70</td>
+                <td>60</td>
+                <td>TIDAK LULUS</td>
+            </tr>
+            <tr class="isi">
+                <td>5</td>
+                <td>Ich</td>
+                <td>80</td>
+                <td>79</td>
+                <td>79,5</td>
+                <td>LULUS</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
